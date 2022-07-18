@@ -35,13 +35,17 @@
 }
 
 .hb1{
+    margin: 0 auto;
     text-align: center;
     color: white;
+    border-radius: 10px;
+    border: black 1px solid;
     text-shadow: black 0.1em 0.1em 0.2em;
     margin-top: 10px;
-    margin-left: -70px;
     font-size: 12px;
     display: block;
+    background-color: gold;
+    width: 80%;
 }
 
 
