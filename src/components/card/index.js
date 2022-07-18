@@ -11,7 +11,6 @@ export default function Card({pokemon}){
           ).then((result)=>{
             setPokemonData(result);
             console.log(result);
-            console.log(pokemonData?.abilities[0].ability.name);
           })
         }catch{
           console.log("Erro");
@@ -25,8 +24,10 @@ export default function Card({pokemon}){
      <div>
         <div className={styles.card}>
           <h3 className={styles.title}>{pokemon.name}</h3>
+          <div className={styles.containerExp}><h3 className={styles.exp}>{pokemonData?.base_experience}</h3></div>
           <img className={styles.img} src={pokemonData?.sprites.front_default}></img>
           <h3 className={styles.hb1}>Habilidade 1:{pokemonData?.abilities[0].ability.name}</h3>
+          {/* <h3 className={styles.hb2}>Habilidade 2:{pokemonData?.abilities[1].ability.name}</h3> */}
         </div>
       </div>
     )
