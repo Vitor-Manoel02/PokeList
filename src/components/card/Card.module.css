@@ -26,6 +26,7 @@
 }
 
 .title{
+    display: block;
     width: 100px;
     /* text-align: center; */
     margin: auto;
@@ -37,21 +38,12 @@
     text-align: center;
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
-    margin-top: -20px;
+    margin-top: 10px;
     margin-left: -70px;
     font-size: 12px;
     display: block;
 }
 
-.hb2{
-    text-align: center;
-    color: white;
-    text-shadow: black 0.1em 0.1em 0.2em;
-    margin-top: -10px;
-    margin-left: -60px;
-    font-size: 12px;
-    display: block;
-}
 
 .exp{
     

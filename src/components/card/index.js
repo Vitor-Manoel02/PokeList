@@ -8,6 +8,7 @@ export default function Card({pokemon}){
         try{
           fetch(pokemon.url).then((resposta)=>
             resposta.json()
+            
           ).then((result)=>{
             setPokemonData(result);
             console.log(result);
@@ -25,7 +26,7 @@ export default function Card({pokemon}){
         <div className={styles.card}>
           <h3 className={styles.title}>{pokemon.name}</h3>
           <div className={styles.containerExp}><h3 className={styles.exp}>{pokemonData?.base_experience}</h3></div>
-          <img className={styles.img} src={pokemonData?.sprites.front_default}></img>
+          <img className={styles.img} src={pokemonData?.sprites.other.home.front_default}></img>
           <h3 className={styles.hb1}>Habilidade 1:{pokemonData?.abilities[0].ability.name}</h3>
           {/* <h3 className={styles.hb2}>Habilidade 2:{pokemonData?.abilities[1].ability.name}</h3> */}
         </div>

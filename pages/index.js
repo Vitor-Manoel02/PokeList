@@ -9,7 +9,7 @@ export default function Home() {
   const [qtdPokemon, setQtdPokemon] = useState(3)
   const url = `https://pokeapi.co/api/v2/pokemon?limit=${qtdPokemon}&offset=0`;
 
-  console.log(qtdPokemon);
+  
   
 
   async function getPokemonList(){
